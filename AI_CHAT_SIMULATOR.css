@@ -1,0 +1,104 @@
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: aqua;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.chat-container {
+    background: white;
+    width: 450px;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 15px 25px rgba(0, 0.1, 0.1, 0.2);
+}
+
+header {
+    background: blueviolet;
+    color: white;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Status {
+    font-size: 0.6rem;
+    background: limegreen;
+    padding: 3px 10px;
+    border-radius: 10px;
+}
+
+.chat-box {
+    height: 400px;
+    padding: 15px;
+    overflow-y: auto;
+    display: flex;
+    background: #f5f5f5;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.bubble-bot {
+    max-width: 80%;
+    padding: 10px 15px;
+    border-radius: 10px;
+    font-size: 0.9rem;
+    animation: muncul 0.3s ease;
+    line-height: 1.3;
+}
+
+.input-area {
+    padding: 10px;
+    background: white;
+    display: flex;
+    gap: 10px;
+}
+
+.user-input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    outline: none;
+}
+
+.btn-send {
+    background: #3498db;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.bubble {
+    max-width: 80%;
+    padding: 10px 15px;
+    border-radius: 10px;
+    font-size: 0.9rem;
+    line-height: 1.4;
+    animation: muncul 0.3s ease;
+}
+
+@keyframes muncul {
+    from { transform: scale(0); }
+    to { transform: scale(1); }
+}
+
+.bot {
+    align-self: flex-start;
+    background: white;
+    color: #333;
+    border-bottom-left-radius: 0;
+}
+
+.user {
+    align-self: flex-end;
+    background: #3498db;
+    color: white;
+    border-bottom-right-radius: 0;
+}
