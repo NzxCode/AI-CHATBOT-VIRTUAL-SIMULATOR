@@ -17,14 +17,14 @@ function addChat(text, sender) {
 }
 
 btnSend.addEventListener('click', function() {
-    const text = inputField.value;
+    const text = userInput.value;
     if (text === "") return;
     
     addChat(text, 'user');
-    inputField.value = "";
+    userInput.value = "";
 
     setTimeout(() => {
-        const reply = "Saya mengerti: " + text + "...............TAPI BOHONG! ORANG GW AI MASIH TAHAP PENGEMBANGAN KEK FRONT END AOWOWOKWKWK..";
+        const reply = "Saya mengerti dari pertanyaan/curhatan lu mengenai : " + text + "...............TAPI BOHONG! ORANG GW AI MASIH TAHAP PENGEMBANGAN KEK FRONT END AOWOWOKWKWK..";
         addChat(reply, 'bot');
     }, 1000);
 });

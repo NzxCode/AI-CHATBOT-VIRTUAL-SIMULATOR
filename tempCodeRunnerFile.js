@@ -1,0 +1,2 @@
+...............TAPI BOHONG! ORANG GW AI MASIH TAHAP PENGEMBANGAN KEK FRONT END AOWOWOKWKWK..";
+        addChat(reply, 'bot');
